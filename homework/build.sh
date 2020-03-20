@@ -1,11 +1,25 @@
 #!/bin/bash
 
+# Set path vars so we can run this from anywhere using the symlink `/usr/local/bin/bld`
+dir=/home/w0527452/CISC324/homework
+cis=/home/w0527452/CISC324
 
-dir="~/CISC324/homework"
-files="";
-for f in "$dir/*.md"; do
-        files+=$(basename "$f")
+# Initialize files var to store file paths
+files=""
 
+# Build file path list of all .md files in $dir directory
+#for f in "$dir/*.md"; do
+#	files+="$f"
+#done
+
+# Same as above except here we sort the files so they're added to the Word doc in the proper order
+for i in $(ls $dir/*.md | sort -V); do
+	files+="$i "
 done
 
-pandoc -f gfm -t docx --reference-doc=./custom.docx -o ../homework.docx $files
+#echo $files
+
+# Concat and convert all markdown homework files into a single Word doc
+# No longer need to specify reference doc since we moved it to its default location ~/.pandoc/reference.docx
+pandoc --lua-filter=$dir/pagebreak.lua -t docx -o "$cis"/chouinard.docx $files
+
