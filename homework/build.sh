@@ -23,3 +23,12 @@ done
 # No longer need to specify reference doc since we moved it to its default location ~/.pandoc/reference.docx
 pandoc --lua-filter=$dir/pagebreak.lua -t docx -o "$cis"/chouinard.docx $files
 
+# Let's try html just for the hell of it
+#pandoc --lua-filter=$dir/pagebreak.lua --metadata title="Homework" -s -o $cis/chouinard.html $files
+
+# Epub?
+#pandoc --metadata title="Homework" --metadata author="Mark Chouinard" -s -o $cis/chouinard.epub $files
+
+# PDF?
+#pandoc --metadata title="Homework" --metadata author="Mark Chouinard" -s -o $cis/chouinard.pdf $files
+
