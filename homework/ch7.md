@@ -97,6 +97,7 @@
 
     D. It appends Standard Output to a file.
 
+\newpage
 
 20. Consider the following shell script:
 
