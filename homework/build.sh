@@ -21,7 +21,7 @@ done
 
 # Concat and convert all markdown homework files into a single Word doc
 # No longer need to specify reference doc since we moved it to its default location ~/.pandoc/reference.docx
-pandoc --lua-filter=$dir/pagebreak.lua -t docx -o "$cis"/chouinard.docx $files
+pandoc --lua-filter=$dir/pagebreak.lua -t docx -s --highlight-style kate -o "$cis"/chouinard.docx $files
 
 # Let's try html just for the hell of it
 #pandoc --lua-filter=$dir/pagebreak.lua --metadata title="Homework" -s -o $cis/chouinard.html $files
