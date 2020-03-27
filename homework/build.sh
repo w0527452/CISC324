@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# This file has been copied to /usr/local/bin to be run from anywhere.
+
+
 # Set path vars so we can run this from anywhere using the symlink `/usr/local/bin/bld`
 dir=/home/w0527452/CISC324/homework
 cis=/home/w0527452/CISC324
