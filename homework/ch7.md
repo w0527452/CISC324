@@ -23,7 +23,7 @@
 
 5. Which command could you use to see a list of all environment and user-defined shell variables as well as their current values?
 
-   C. Set
+   B. Env
 
 
 6. Every if construct begins with if and must be terminated with ___________________
