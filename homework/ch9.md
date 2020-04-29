@@ -9,6 +9,7 @@
 2. Which of the following statements is true? (Choose all that apply.)
 
    B. If /etc/cron.allow exists, only users listed in it can use the cron command.
+
    C. If /etc/cron.deny exists and /etc/cron.allow does not exist, any user not listed in /etc/cron.deny can use the cron command.
    
    If both exist, only /etc/cron.allow is processed.
