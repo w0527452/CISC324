@@ -39,6 +39,7 @@
 8. The current value for the HOME variable is displayed by which of the following commands? (Choose all that apply.)
 
    B. echo ~
+
    C. echo $HOME
 
 
@@ -51,6 +52,7 @@
 
     D. \!
 
+\pagebreak
 
 11. What would be the effect of using the alias command to make an alias for the date command named cat in honor of your favorite pet?
 
@@ -93,11 +95,11 @@
 
     TRUE
 
-
 19. What does >> accomplish when entered on the command line after a command?
 
     D. It appends Standard Output to a file.
 
+\pagebreak
 
 20. Consider the following shell script:
 
